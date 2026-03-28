@@ -16,3 +16,10 @@ AI-powered Patient Recovery Assistant helps patients during recovery by answerin
 - HTML&CSS
 # Future Scope
 - Integration with OpenAI API for real-time intelligent responses
+# How to Run
+1. Download the project files  
+2. Open the folder in terminal or command prompt  
+3. Install dependencies:
+   pip install -r requirements.txt  
+4. Run the program:
+   python app.py
