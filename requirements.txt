@@ -1,0 +1,5 @@
+flask
+apscheduler
+pymysql
+plyer
+werkzeug
