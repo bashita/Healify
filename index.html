@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healify - Your AI Health Assistant</title>
+    <style>
+        /* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body{
+    background: linear-gradient(135deg,#e3f2fd,#bbdefb);
+    color:#1a2a3a;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background-image: url('{{ url_for("static", filename="image3.jpg") }}');   /* your image name */
+    background-repeat: no-repeat;      /* stops tiling */
+    background-size: cover;            /* fills entire screen */
+    background-position: center;       /* keeps image centered */
+    background-attachment: fixed;      /* stays fixed while scrolling */
+
+}
+
+/* Header */
+header{
+    background:#1565c0;
+    color:white;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+/* Navigation */
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    padding:6px 4px;
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    color:#e3f2fd;
+    border-bottom:2px solid white;
+}
+
+/* Main content */
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+/* Intro card */
+.intro{
+    background:white;
+    padding:55px 60px;
+    border-radius:18px;
+    text-align:center;
+    max-width:720px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+.intro h2{
+    font-size:34px;
+    margin-bottom:20px;
+    color:#1565c0;
+}
+
+.intro p{
+    font-size:17px;
+    line-height:1.7;
+    margin-bottom:35px;
+    color:#444;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:linear-gradient(135deg,#1e88e5,#1565c0);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+    background:linear-gradient(135deg,#0d47a1,#1565c0);
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Footer */
+footer{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    nav ul{
+        gap:18px;
+    }
+
+    .intro{
+        padding:40px 25px;
+    }
+
+    .intro h2{
+        font-size:26px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Healify</h1>
+        <nav>
+            <ul>
+                <li><a href="/dashboard">Home</a></li>
+                <li><a href="/prescription">Prescription</a></li>
+                <li><a href="/careplan">Care Plan</a></li>
+                <li><a href="/chatbot">Chat with AI</a></li>
+                <li><a href="/about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="intro" class="intro">
+                <h2>Your Personal AI Health Assistant</h2>
+                <p>Healify is here to help you with your health-related questions and concerns. Our AI assistant can provide you with information, advice, and support to help you make informed decisions about your health.</p>
+                <a href="/chatbot" class="btn">Chat with AI Now</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Healify. All rights reserved.</p>
+    </footer>
+</body>
+</html>

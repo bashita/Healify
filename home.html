@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME</title>
+    </head>
+    <style>
+        /* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Full page background */
+body{
+    height:100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg,#0f4c81,#3fa9f5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url('{{ url_for("static", filename="image2.jpeg") }}');   /* your image name */
+    background-size: cover;        /* fills entire screen */
+    background-position: center;   /* center the image */
+    background-repeat: no-repeat;  /* no repeating */
+    background-attachment: fixed;  
+}
+/* Header bar */
+header{
+    position:fixed;      /* sticks to top */
+    top:0;
+    left:0;
+    width:100%;
+    background:#1783e2;  /* blue theme */
+    padding:18px 0;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    z-index:1000;
+}
+
+/* Heading style */
+header h1{
+    color:white;
+    font-family:"Segoe UI", Arial, sans-serif;
+    font-size:32px;
+    letter-spacing:1.5px;
+    margin:0;
+}
+
+
+/* Card container */
+.container{
+    background: rgba(255, 255, 255, 0.8);
+    padding:45px 60px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    width:500px;
+    height:320px;
+}
+
+/* Title */
+.container h1{
+    color:#1981dd;
+    margin-bottom:30px;
+    font-size:38px;
+    letter-spacing:1px;
+}
+
+/* Links styled as buttons */
+.container a{
+    display:block;
+    margin:15px auto;
+    padding:20px;
+    width:300px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    border-radius:8px;
+    background:linear-gradient(135deg,#1490ef,#3fa9f5);
+    transition:0.3s ease;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Hover effect */
+.container a:hover{
+    background:linear-gradient(135deg,#1c7ed4,#2a7fd1);
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Small subtitle effect */
+.container::before{
+    content:"Welcome to your AI Health Assistant";
+    display:block;
+    font-size:14px;
+    color:#555;
+    margin-bottom:20px;
+}
+    </style>
+    <body>
+        <div class="container">
+        <h1 style="color: hsl(180, 8%, 3%);"> Healify</h1>
+       <center> <a href="/signup">Sign up</a></center> 
+       <center><a href="/signin">Sign in</a></center> 
+    </div>
+    </body>
+</html>
