@@ -52,7 +52,7 @@ Additional Impact:
 ![Demo] (https://github.com/user-attachments/assets/e2dd34be-cb6b-4356-bf71-95477e173321)
 
 # Disclaimer
-This system does not prescribe medicine. It only reminds users to follow doctor instructions and provides general guidance.
+Healify is not a medical service, and the AI system is not a doctor or healthcare professional. The information provided by Healify is for educational and informational purposes only. Users should always consult qualified medical professionals for diagnosis, treatment, or medical advice. Healify is intended to support recovery and awareness, not replace professional healthcare.
 # Team
 -S S Madhumitha - AI Logic
 -Lalitha Shree D - Backend
